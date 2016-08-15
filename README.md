@@ -1,0 +1,2 @@
+# HiSwift
+Some class exercises
