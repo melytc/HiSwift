@@ -4,7 +4,7 @@ import UIKit
 // muestre la tabla de multiplicar correspondiente
 // IMPORTANTE: Usa el estatuto for de swift
 // Llama a la función anterior con al menos 2 valores diferentes
-func tablaMultiplica(numero: Int) {
+func tablaMultiplicar(numero: Int) {
     if numero <= 10 && numero >= 1 {
         for i in 0...10 {
             print("\(numero) x \(i) = \(numero * i)")
@@ -13,19 +13,19 @@ func tablaMultiplica(numero: Int) {
 }
 
 print("Tabla del 2")
-tablaMultiplica(2)
+tablaMultiplicar(2)
 print("")
 print("Tabla del 3")
-tablaMultiplica(3)
+tablaMultiplicar(3)
 
 print("------------------------------------------")
 // 2. Escribe un ciclo que muestre valores entre a y b avanzando de 2 en 2
-var a = 20
-var b = 30
+var inicio = 20
+var fin = 30
 
-while a <= b {
-    print(a)
-    a += 2
+while inicio <= fin {
+    print(inicio)
+    inicio += 2
 }
 
 print("------------------------------------------")
@@ -89,7 +89,7 @@ print("------------------------------------------")
 // Usa una tupla para regresar estos datos
 // Crea un arreglo de números y llama a la función;
 // después muestra los valores que regresó
-func MayoryProm (numeros: [Int]) -> (mayor: Int, prom: Float){
+func mayorProm (numeros: [Int]) -> (mayor: Int, prom: Float) {
     var mayor = 0
     var prom = 0
     for numero in numeros {
@@ -102,7 +102,7 @@ func MayoryProm (numeros: [Int]) -> (mayor: Int, prom: Float){
 }
 
 var arreglo = [5, 1, 3, 2, 4, 0]
-print(MayoryProm(arreglo))
+print(mayorProm(arreglo))
 
 print("------------------------------------------")
 // 9. Escribe la clase Artículo con los atributos ident, descrip, precio
@@ -166,4 +166,3 @@ print("------------------------------------------")
 for articulo in articulos {
     print(articulo.ident, articulo.descrip, articulo.precio)
 }
-
